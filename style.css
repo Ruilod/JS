@@ -1,0 +1,24 @@
+.z{
+    width: 100px;
+    height: 100px;
+    background: brown;
+    font-size: 80px;
+    text-align: center;
+}
+.x{ 
+    width: 100px;
+    height: 100px;
+    background: white;
+    font-size: 80px;
+    text-align: center;
+    
+}
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
