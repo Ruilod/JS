@@ -49,9 +49,8 @@ class Cart {
 
         let totalPrice = document.createElement('P');
         totalPrice.classList.add('total_price');
-        if (this.cart.length > 0) { totalPrice.textContent = 'Total price: ' + this.getTotalPrice() + '₽'; }
-        else { totalPrice.textContent = 'Cart is Empty! ' }
-        htmlcart.append(totalPrice);
+        if (this.cart.length > 0) { totalPrice.textContent = 'Total price: ' + this.getTotalPrice() + '₽'; htmlcart.append(totalPrice);; }
+
     }
 }
 
