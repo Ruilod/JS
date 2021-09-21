@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            height: 10vh;
+        }
+
+        .name {
+            font-size: 80px;
+        }
+
+        .cart_product_info {
+            font-size: 40px;
+        }
+
+        .main_content {
+            margin: 40px;
+            height: 100vh;
+        }
+
+        .products_container {
+            height: fit-content;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        .product_card {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            width: 350px;
+            margin: 50px 100px;
+            padding: 20px;
+            background: white;
+            box-shadow: 5px 10px 50px rgb(0, 4, 255);
+            align-content: center;
+            justify-content: space-between;
+        }
+
+        .card_top {
+            display: inherit;
+            flex-direction: inherit;
+        }
+
+        .product_pic {
+            width: auto;
+        }
+
+        .product_name {
+            font-size: 30px;
+            font-family: fantasy;
+            font-weight: normal;
+        }
+
+        .product_description {
+            font-size: 16px;
+            font-family: fantasy;
+            font-weight: normal;
+        }
+
+        .card_bottom {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .product_price {
+            font-size: 30px;
+            font-family: fantasy;
+            font-weight: normal;
+        }
+
+        .product_toCart {
+            background: rgb(0, 0, 0);
+            box-shadow: 5px 20px 50px rgb(16 112 177 / 20%);
+            border-radius: 5px;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            width: 150px;
+        }
+
+        .cart {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            font-size: 80px;
+            min-height: 350px;
+        }
+
+        .cart_product {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+        }
+
+        .remove_from_cart {
+            background: red;
+            box-shadow: 5px 20px 50px rgb(16 112 177 / 20%);
+            border-radius: 5px;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            width: 200px;
+        }
+
+        .total_price {
+            font-size: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class=name>Shop</h1>
+
+        </div>
+        <hr>
+        <div class="main_content">
+            <div class="products_container">
+
+            </div>
+            <hr>
+            <div class="cart"> Cart:
+            </div>
+            <hr>
+
+        </div>
+        <div class="footer">some Text</div>
+        <script src='cartScript.js'></script>
+</body>
+
+</html>

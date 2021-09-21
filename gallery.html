@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .shelf {
+            display: flex;
+            justify-content: space-around;
+            height: 20vh;
+
+        }
+
+        .small-pic {
+            margin: auto;
+            height: 10vh;
+
+        }
+
+        .scene {
+            display: flex;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .big-img {
+            text-decoration: none;
+            margin: 3vh;
+        }
+    </style>
+    <script>
+        function showBig(e) {
+            bigimg = document.getElementById('big-img');
+            console.log(bigimg)
+            bigimg.src = 'big/' + e.alt + '.jpg';
+            bigimg.onerror = function () { bigimg.src = 'big/error.png'; };
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="shelf" id='shelf'>
+            <img class='small-pic' onclick=showBig(this) src="small/1.jpg" alt="1">
+            <img class='small-pic' onclick=showBig(this) src="small/2.jpg" alt="2">
+            <img class='small-pic' onclick=showBig(this) src="small/3.jpg" alt="3">
+        </div>
+        <hr>
+        <div class="scene" id='scene'>
+            <img class='big-img' id='big-img' alt="Выберите изображение для просмотра">
+        </div>
+    </div>
+</body>
+
+</html>
