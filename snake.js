@@ -56,8 +56,8 @@ function startGame() {
     respawn();//создали змейку
 
     snake_timer = setInterval(move, SNAKE_SPEED);
+    block_timer = setInterval(createBadBlock, 6000);
     setTimeout(createFood, 0);
-    setInterval(createBadBlock, 6000);
 }
 
 function respawn() {
@@ -130,10 +130,9 @@ function move() {
         if (!haveFood(new_unit)) {
             // Находим хвост
             let removed = snake.splice(0, 1)[0];
-            let classes = removed.classList.value.split(' ');
 
             // удаляем хвост
-            removed.setAttribute('class', classes[0] + ' ' + classes[1]);
+            removed.classList.remove('snake-unit');
         }
     }
     else {
